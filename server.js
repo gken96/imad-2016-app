@@ -9,13 +9,13 @@ app.use(morgan('combined'));
 var articleOne={
     title:'Article One| GEORGE KEN',
     date:'Oct 12 2016',
-    heading:'Article one'
-    content:` <p>
+    heading:'Article one',
+    content:`<p>
                 This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
             </p>
             <p>
                 This is the content for my first article.This is the content for my first article.This is the content for my first artic.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
-            </p>`
+            </p>`,
     
 };
 function createTemplate(data){
