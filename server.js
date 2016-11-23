@@ -75,7 +75,16 @@ var htmlTemplate=`<html>
         <div>
             ${content}
         </div>
+        <div class="footer">
+         <hr/>
+        <input type="text" id="name" placeholder="comment"> </input>
+        <input type="submit" value="Submit" id="submit_btn"></input>
+        <ul id="namelist">
+        </ul>
+        </div>    
         </div>
+        <script type="text/javascript" src="/ui/main.js">
+        </script>
     </body>
 </html>
 `;
