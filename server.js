@@ -5,6 +5,12 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var names=[];
+app.get('/submit-name',function(req,res){
+   var name=req.query.name;
+   names.push(name);
+   res.send(JSON.stringify(names));
+});
 
 
 var articles = {
@@ -103,12 +109,6 @@ app.get('/counter', function (req, res){
 });
 
 
-var names=[];
-app.get('/submit-name',function(req,res){
-   var name=req.query.name;
-   names.push(name);
-   res.send(JSON.stringify(names));
-});
 
 
 app.get('/:articleName', function (req,res) {
