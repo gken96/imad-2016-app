@@ -14,7 +14,7 @@ app.get('/submit-name',function(req,res){
 
 
 var articles = {
- 'article-one':{
+ 'article-one':{ 
     title:'Article One| GEORGE KEN',
     date:'Oct 12 2016',
     heading:'Article one',
